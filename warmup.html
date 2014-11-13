@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang = "en">
+<head>
+  <meta charset = "utf-8">
+  <title>WarmUp </title>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <style>
+    .style{background-color: red;}
+    .rgh{background-color: black; }
+
+  </style>
+
+<script>
+  window.onload = init;
+
+  function init() {
+  //  $(".style").click(bgColorHandler);
+    // #assignign click handler method
+
+  $(".style").click(function(){
+      $(".style").addClass("rgh");
+  });
+
+  $(".rgh").css("font-color", "green"); 
+
+
+      // var b = document.getElementsByClassName("style")[0];
+      // b.onclick = bgColor;
+
+  }
+
+  // function bgColorHandler() {
+  //   $(".style").addClass("rgh");   <-- JQUERY
+  //   // var b = document.getElementsByClassName("style")[0];
+  //   // b.className = "rgh";
+  // }
+
+
+
+  </script>
+
+</head>
+<body>
+  <div class = "style"><h1> BIG ARRAY</h1></div>
+
+
+
+
+
+</body>
+</html>

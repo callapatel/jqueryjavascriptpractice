@@ -1,0 +1,34 @@
+$(".style")
+  does the same as .getElementById essentially. You get the div but the jquery version with the div.
+  Div object wrapped in [] which is jquery stuff.
+
+$(".style").css("background-color", "gray");
+$(".rgh").css("background-color", "gray");
+
+use #idName if using ID's.
+
+Accessing inner divs'
+clickmeDiv = $('#clickme')
+realCliclMeDiv = clickmeDiv.get(0)
+realCliclMeDiv.innerHTML = "im a div" ;
+
+if searching for just all divs just do $("div")
+
+$("div").css("background-color", "pink");
+
+var $myDiv = $("#clickme"); #if doing a variable.
+  $myDiv.click(...)
+
+
+
+  Instead of window.load init
+  you can just say
+
+  $(function () {
+$("div").click(function(){
+
+  $(this).addClass("rgh").fadeOut("slow", function(){$(this).fadeIn("fast");
+                                          });
+
+          });
+});

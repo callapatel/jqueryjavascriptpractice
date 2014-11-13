@@ -1,0 +1,33 @@
+$(function () {
+  var $mylist = $("#list");
+
+  var $newListItem = $("<li></li>");
+  $newListItem.html("I'm a list item");
+
+  $mylist.append($newListItem);
+
+
+
+}
+
+
+);
+
+
+SHORTER:
+
+$(function () {
+  var myListItem = prompt("enter a list item");
+
+  $("#list").append("<li>" + myListItem +  "</li>");
+  $(li).click(function(){
+    $(this).toggleClass("blue");
+
+  }
+  );
+
+
+}
+
+
+);
