@@ -12,14 +12,20 @@ function hope(e) {
   $("#task").val("");
   var oreo = (($("#list").children().length % 2 === 0 )?  ($("#list :last-child").css("background-color", "pink")) : ($("#list :last-child").css("background-color", "grey")));
 
-}
 
+
+
+}
 
 
   $(function() {
       $( "#list" ).sortable();
       $( "#list" ).disableSelection();
     });
+
+
+
+
 
 
 
